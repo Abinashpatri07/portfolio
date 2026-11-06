@@ -31,7 +31,7 @@ import {
 } from 'lucide-react';
 
 export default function ProjectMockup({ variant }) {
-  // 1. HedgeVerify - BGV Platform Mockup
+  // 1. Background Verification - BGV Platform Mockup
   if (variant === 'hedge-verify') {
     return (
       <div className="w-full max-w-[340px] overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-[0_14px_35px_rgba(0,0,0,0.08)]">
@@ -42,8 +42,8 @@ export default function ProjectMockup({ variant }) {
               <ShieldCheck size={15} />
             </div>
             <div>
-              <div className="text-[11px] font-bold text-[var(--text)]">HedgeVerify</div>
-              <div className="text-[9px] text-[var(--muted)]">BGV Candidate Screening</div>
+              <div className="text-[11px] font-bold text-[var(--text)]">Background Verification</div>
+              <div className="text-[9px] text-[var(--muted)]">Candidate Screening Platform</div>
             </div>
           </div>
           <span className="flex items-center gap-1 rounded bg-[var(--surface)] px-1.5 py-0.5 text-[8px] font-bold tracking-wider text-[var(--accent)] border border-[var(--border)]">

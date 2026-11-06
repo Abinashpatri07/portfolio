@@ -163,7 +163,7 @@ export const expertiseData = [
 export const projectsData = [
   {
     id: "01",
-    title: "HedgeVerify — Background Verification Platform",
+    title: "Background Verification Platform",
     category: "Enterprise Web",
     platformLabel: "Enterprise BGV Platform",
     visualVariant: "hedge-verify",

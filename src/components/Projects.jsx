@@ -8,7 +8,7 @@ export default function Projects() {
   const totalNumber = String(total).padStart(2, "0");
 
   /* 2 columns, masonry style matching reference site:
-     pehle 3 projects left me (HedgeVerify, Corrugation, Anjali Infra), 
+     pehle 3 projects left me (Background Verification, Corrugation, Anjali Infra), 
      baaki 2 right me (Plant Machine ERP, Referral & Coupon Platform) */
   const half = Math.ceil(total / 2);
   const columns = [projectsData.slice(0, half), projectsData.slice(half)];
