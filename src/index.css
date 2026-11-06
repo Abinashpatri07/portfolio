@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f7f8f4;
+  --surface: #ffffff;
+  --surface-soft: #eaf0e8;
+  --dark: #203a2d;
+  --text: #1d2725;
+  --muted: #64706a;
+  --accent: #568b6d;
+  --accent-light: #70ab82;
+  --border: #e3e8e0;
+  --border-strong: #cbdccc;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif;
+}
+
+.font-accent {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom styles matching the-yash.in */
+.kicker-line {
+  background: currentColor;
+  flex-shrink: 0;
+  width: 30px;
+  height: 1px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface-soft);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Pulse animation for availability dot */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.15);
+  }
+}
+
+.pulse-dot {
+  animation: pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
