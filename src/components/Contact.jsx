@@ -55,7 +55,7 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const msgLen = formData.message.trim().length;
 
@@ -73,10 +73,51 @@ export default function Contact() {
     setStatus("submitting");
     setErrorMessage("");
 
-    setTimeout(() => {
-      setStatus("success");
-      setFormData(initialForm);
-    }, 900);
+    try {
+      const accessKey =
+        import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ||
+        "7b647436-82c1-44d9-ae5e-97e4307656ec";
+
+      const payload = {
+        access_key: accessKey,
+        subject: `New Portfolio Inquiry from ${formData.name}`,
+        from_name: formData.name,
+        name: formData.name,
+        email: formData.email,
+        whatsapp: formData.whatsapp_number || "Not provided",
+        preferred_reply: formData.preferred_reply,
+        services: formData.services.length > 0 ? formData.services.join(", ") : "General Inquiry",
+        budget: formData.budget || "Not specified",
+        timeline: formData.timeline || "Not specified",
+        message: formData.message,
+      };
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("success");
+        setFormData(initialForm);
+      } else {
+        setStatus("error");
+        setErrorMessage(
+          result.message || "Failed to send message. Please try again or reach out directly via email."
+        );
+      }
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage(
+        "Network error. Please check your internet connection or email directly."
+      );
+    }
   };
 
   const servicesLabel =
@@ -170,6 +211,9 @@ export default function Contact() {
               className="space-y-5 lg:space-y-[clamp(20px,1.3vw,26px)]"
               noValidate
             >
+              {/* Botcheck honeypot for spam prevention */}
+              <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
+
               {/* name + email */}
               <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                 <div>

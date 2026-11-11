@@ -20,7 +20,8 @@ export default function App() {
         <Projects />
         <Services />
         <Approach />
-        <Contact />
+        {/* Get in touch section (Commented out, not removed) */}
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

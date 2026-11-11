@@ -21,9 +21,9 @@ export const navLinks = [
 ];
 
 export const principles = [
-  "Automation-first thinking",
-  "Reliable, maintainable architecture",
-  "Security and scalability by design",
+  "Enterprise-grade solution architecture",
+  "Business-focused technology engineering",
+  "Scalable, secure and reliable systems",
 ];
 
 export const heroStats = [
@@ -35,127 +35,143 @@ export const heroStats = [
 export const expertiseData = [
   {
     id: "01",
-    title: "Frontend & Web Engineering",
+    title: "Frontend Development",
+    tagline: "Crafting intuitive experiences. Engineering seamless interfaces.",
     iconName: "Code",
-    description: "Building responsive, accessible, and performant web interfaces with reusable components, efficient state management, and seamless integration with backend services.",
+    description: "Building responsive, accessible and high-performance user interfaces that simplify complex workflows. Creating scalable frontend architectures with reusable components, efficient state management and seamless backend integration.",
     tags: [
-      "React",
+      "React.js",
+      "Angular",
       "JavaScript",
       "TypeScript",
+      "HTML5 & CSS3",
       "Tailwind CSS",
-      "HTML5",
-      "CSS3",
       "Responsive Design",
       "State Management",
-      "API Integration",
-      "Performance Optimization"
+      "UI Component Architecture"
     ]
   },
   {
     id: "02",
-    title: "Backend & System Engineering",
+    title: "Backend Engineering",
+    tagline: "Powering applications with robust engineering.",
     iconName: "Server",
-    description: "Designing secure APIs, automated business workflows, and scalable backend services that connect applications, data, and enterprise operations.",
+    description: "Developing secure, scalable and high-performance backend systems that power enterprise applications. Engineering business logic, API services, authentication mechanisms and automated workflows designed for reliability, maintainability and performance.",
     tags: [
       "Node.js",
       "Express.js",
-      "Hapi.js",
-      "REST APIs",
-      "Microservices",
-      "JWT",
-      "Authentication",
-      "API Validation",
-      "BullMQ",
-      "Redis"
+      "Python",
+      ".NET",
+      "Authentication & Authorization",
+      "Business Logic Engineering",
+      "Background Processing"
     ]
   },
   {
     id: "03",
     title: "Database & Data Architecture",
+    tagline: "Structuring data. Enabling intelligent decisions.",
     iconName: "Database",
-    description: "Designing reliable data models and centralized information systems, including cross-product customer profiles, unified activity histories, and Single Source of Truth architectures.",
+    description: "Designing efficient database architectures and data models that ensure data integrity, consistency and performance. Building reliable data layers with optimized queries, structured relationships and scalable data management strategies across relational and non-relational databases.",
     tags: [
-      "PostgreSQL",
       "MySQL",
+      "MariaDB",
+      "Microsoft SQL Server",
+      "Oracle Database",
+      "PostgreSQL",
       "MongoDB",
-      "Mongoose",
-      "SQL",
       "Database Design",
       "Data Modeling",
       "Query Optimization",
-      "Indexing",
-      "Transactions",
-      "SSOT"
+      "Indexing & Transactions",
+      "Data Integrity & Management"
     ]
   },
   {
     id: "04",
-    title: "Cross-Platform Applications",
-    iconName: "Smartphone",
-    description: "Developing connected application experiences across web, mobile, desktop, and smart TV platforms, with consistent interfaces and integrated backend services.",
+    title: "API & Enterprise Integration",
+    tagline: "Connecting systems. Enabling seamless operations.",
+    iconName: "Network",
+    description: "Engineering secure and reliable integration ecosystems that connect enterprise applications, third-party platforms and external services. Enabling seamless data exchange, interoperability and automated business processes across connected systems.",
     tags: [
-      "Web Applications",
-      "Mobile Apps",
-      "Android",
-      "iOS",
-      "Desktop Apps",
-      "Windows",
-      "macOS",
-      "Cross-Platform UI",
-      "API Integration"
+      "REST API",
+      "SOAP API",
+      "RabbitMQ",
+      "Database Connectors",
+      "SMTP Integration",
+      "ESB Integration",
+      "System Integration"
     ]
   },
   {
     id: "05",
-    title: "Real-Time & Communication Systems",
-    iconName: "Radio",
-    description: "Engineering event-driven applications, real-time data synchronization, and integrated voice communication between browser applications, physical devices, and enterprise systems.",
+    title: "AI & Intelligent Automation",
+    tagline: "Turning intelligence into practical business value.",
+    iconName: "Bot",
+    description: "Integrating artificial intelligence and intelligent automation into business applications to streamline operations, improve decision-making and eliminate repetitive processes. Developing AI-enabled workflows and context-aware solutions that solve real-world business challenges.",
     tags: [
-      "WebSockets",
-      "Socket.IO",
-      "Real-Time Sync",
-      "Asterisk",
-      "Asterisk AMI",
-      "WebRTC",
-      "SIP",
-      "VoIP",
-      "Device Integration",
-      "ERP Integration"
+      "AI & LLM Integration",
+      "Agentic AI",
+      "Retrieval-Augmented Generation (RAG)",
+      "AI-Powered Applications",
+      "Workflow Automation",
+      "Intelligent Process Automation",
+      "Prompt Engineering",
+      "AI API Integration"
     ]
   },
   {
     id: "06",
-    title: "AI/ML & Data Engineering",
-    iconName: "Cpu",
-    description: "Building data annotation tools and model training workflows, integrating AI model services with mobile applications, and applying privacy-aware data handling where required.",
+    title: "Cloud & DevOps",
+    tagline: "Building secure foundations. Delivering reliable operations.",
+    iconName: "Cloud",
+    description: "Designing and managing cloud infrastructure and deployment environments that support application scalability, security and operational reliability. Implementing containerization, deployment automation, infrastructure monitoring and continuous delivery practices.",
     tags: [
-      "AI/ML",
-      "AI Integration",
-      "Model Training",
-      "Training Pipelines",
-      "Data Annotation",
-      "Dataset Preparation",
-      "Mobile AI Integration",
-      "PII Protection",
-      "RBAC",
-      "ABAC"
+      "AWS",
+      "Cloud Infrastructure",
+      "VPS",
+      "Docker & Containerization",
+      "CI/CD",
+      "Linux Administration",
+      "Git & GitHub",
+      "Application Deployment",
+      "Infrastructure Monitoring",
+      "Infrastructure Security"
     ]
   },
   {
     id: "07",
-    title: "Cloud & DevOps",
-    iconName: "Cloud",
-    description: "Managing cloud infrastructure, application deployment, development environments, and automated delivery workflows for dependable software operations.",
+    title: "Solution Architecture",
+    tagline: "Architecting for scale. Engineering for the future.",
+    iconName: "Layers",
+    description: "Translating complex business requirements into scalable, secure and maintainable technology architectures. Defining architectural patterns, technology strategies and system designs that align technical decisions with business objectives and long-term growth.",
     tags: [
-      "AWS",
-      "Cloud Infrastructure",
-      "CI/CD",
-      "Application Deployment",
-      "Docker",
-      "Git",
-      "GitHub",
-      "Linux",
-      "Monitoring"
+      "Enterprise Architecture",
+      "Solution Architecture",
+      "System Design",
+      "Modular Monolith Architecture",
+      "Microservices Architecture",
+      "Architecture Patterns",
+      "Scalability & Resilience",
+      "Technology Stack Selection",
+      "Technical Strategy"
+    ]
+  },
+  {
+    id: "08",
+    title: "Enterprise Platforms",
+    tagline: "Digitizing operations. Transforming business processes.",
+    iconName: "Building2",
+    description: "Designing and developing enterprise-grade business platforms that streamline operations, automate workflows and improve organizational efficiency. Delivering integrated applications tailored to complex business processes, industry requirements and evolving operational needs.",
+    tags: [
+      "ERP",
+      "CRM",
+      "Workflow Management Systems",
+      "Business Process Automation",
+      "Enterprise Applications",
+      "Operational Management Platforms",
+      "Business Application Integration",
+      "Industry-Specific Solutions"
     ]
   }
 ];

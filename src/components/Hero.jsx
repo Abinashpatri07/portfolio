@@ -14,28 +14,28 @@ import { personalInfo } from "../data/portfolioData";
 
 const steps = [
   {
-    label: "Understand",
+    label: "Discover",
     icon: Lightbulb,
-    title: "Understand the problem first",
-    desc: "Dig into the goals, users, and constraints so the solution targets what actually matters, not just what was asked.",
+    title: "Understand before you build",
+    desc: "Understand business goals, challenges, user needs, and requirements to identify the right opportunities and define a clear direction.",
   },
   {
     label: "Architect",
     icon: BrainCircuit,
-    title: "Design a solid foundation",
-    desc: "Plan data models, APIs, and infrastructure so the system stays fast, secure, and easy to extend.",
+    title: "Blueprint for scalability.",
+    desc: "Design scalable, secure, and future-ready architectures with the right technology stack and integration strategy.",
   },
   {
-    label: "Build",
+    label: "Engineer",
     icon: Code2,
-    title: "Connect every component",
-    desc: "Bring interfaces, backend services, databases, automation, and real-time integrations together into a working solution.",
+    title: "Build with precision",
+    desc: "Transform ideas into robust, enterprise-grade solutions through seamless development, integration, and deployment.",
   },
   {
-    label: "Refine",
+    label: "Optimize",
     icon: ShieldCheck,
-    title: "Test, polish, and improve",
-    desc: "Review performance, fix edge cases, and iterate with feedback until it works reliably in the real world.",
+    title: "Evolve for excellence",
+    desc: "Continuously enhance performance, security, reliability, and scalability to maximize business value and long-term impact.",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function Hero() {
                 </span>
 
                 <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--dark)] sm:text-[12px]">
-                  Available for freelance projects
+                  AVAILABLE FOR STRATEGIC TECHNOLOGY & FREELANCE ENGAGEMENTS
                 </span>
               </div>
             )}
@@ -92,12 +92,12 @@ export default function Hero() {
               id="hero-title"
               className="mt-5 text-[36px] font-extrabold leading-[1.08] tracking-[-0.04em] text-[var(--text)] sm:text-[50px] lg:text-[clamp(50px,4.1vw,76px)]"
             >
-              Building software
+              Engineering complex
               <br />
-              that makes
+              ideas into
               <br />
               <span className="font-accent pr-2 font-normal italic text-[var(--accent)]">
-                complexity simple.
+                scalable digital solutions.
               </span>
             </h1>
 
@@ -107,17 +107,17 @@ export default function Hero() {
               <strong className="font-semibold text-[var(--text)]">
                 {personalInfo.name}
               </strong>
-              , a full-stack developer building applications, automation-driven
-              platforms, and connected systems. From frontend experiences to
-              backend architecture, real-time communication, and AI integration,
-              I focus on software that solves practical problems and works
-              reliably.
+              , a technology professional with 12+ years of experience and a track record of successfully delivering 50+ enterprise projects. I specialize in transforming complex business requirements into scalable software solutions through strategic architecture, full-stack engineering, enterprise integrations, and AI-driven innovation.
+              From defining technology strategy and designing robust architectures to leading end-to-end development and deployment, I bring together technical expertise and business understanding to deliver solutions that create measurable value.
             </p>
+            <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--dark)] sm:text-[12px]">
+                  12+ Years Experience | 50+ Enterprise Projects | End-to-End Solution Delivery
+                </span>
 
             {/* Action Buttons */}
             <div className="mt-7 flex flex-wrap items-center gap-x-7 gap-y-4">
               <a
-                href="#contact"
+                href={`mailto:${personalInfo.email}`}
                 className="inline-flex items-center gap-3 rounded-full bg-[var(--dark)] px-6 py-3.5 text-[15px] font-semibold text-white shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90 hover:shadow-lg"
               >
                 <span>Start a project</span>
@@ -160,11 +160,10 @@ export default function Hero() {
                     type="button"
                     onClick={() => setActive(i)}
                     aria-pressed={on}
-                    className={`flex h-[72px] flex-col items-center justify-center gap-2 rounded-[12px] border text-[10px] font-semibold transition-all duration-200 sm:h-[82px] sm:text-[11px] ${
-                      on
+                    className={`flex h-[72px] flex-col items-center justify-center gap-2 rounded-[12px] border text-[10px] font-semibold transition-all duration-200 sm:h-[82px] sm:text-[11px] ${on
                         ? "border-[var(--dark)] bg-[var(--dark)] text-white"
                         : "border-[var(--border)] bg-[var(--bg)] text-[var(--muted)] hover:bg-[var(--surface-soft)]"
-                    }`}
+                      }`}
                   >
                     <Icon size={21} strokeWidth={1.6} />
                     {s.label}
@@ -178,9 +177,8 @@ export default function Hero() {
               {steps.map((s, i) => (
                 <span
                   key={s.label}
-                  className={`h-[3px] rounded-full transition-colors duration-300 ${
-                    i <= active ? "bg-[var(--accent)]" : "bg-[var(--border)]"
-                  }`}
+                  className={`h-[3px] rounded-full transition-colors duration-300 ${i <= active ? "bg-[var(--accent)]" : "bg-[var(--border)]"
+                    }`}
                 />
               ))}
             </div>

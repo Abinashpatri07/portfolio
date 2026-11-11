@@ -3,10 +3,11 @@ import {
   Code,
   Server,
   Database,
-  Smartphone,
-  Radio,
-  Cpu,
-  Cloud
+  Network,
+  Bot,
+  Cloud,
+  Layers,
+  Building2,
 } from 'lucide-react';
 import { expertiseData } from '../data/portfolioData';
 
@@ -14,16 +15,16 @@ const iconMap = {
   Code,
   Server,
   Database,
-  Smartphone,
-  Radio,
-  Cpu,
+  Network,
+  Bot,
   Cloud,
+  Layers,
+  Building2,
 };
 
 export default function Expertise() {
   const total = expertiseData.length;
   const totalNumber = String(total).padStart(2, "0");
-  const centerLast = total % 3 === 1;
 
   return (
     <section
@@ -48,32 +49,27 @@ export default function Expertise() {
             </h2>
           </div>
 
-          <p className="max-w-[420px] text-[16px] leading-[1.8] text-[var(--muted)] lg:mt-1 lg:max-w-[clamp(300px,21vw,410px)] lg:text-[clamp(16px,1.1vw,21px)] lg:leading-[1.75]">
-            Engineering expertise across full-stack applications, distributed
-            systems, real-time communication, AI/ML, and cloud infrastructure.
+          <p className="max-w-[440px] text-[16px] leading-[1.8] text-[var(--muted)] lg:mt-1 lg:max-w-[clamp(300px,22vw,440px)] lg:text-[clamp(16px,1.1vw,21px)] lg:leading-[1.75]">
+            Engineering expertise across frontend development, backend systems, database
+            architecture, enterprise integrations, intelligent automation, cloud, and enterprise platforms.
           </p>
         </div>
 
         {/* ───────── CARDS ───────── */}
         <div className="grid grid-cols-1 gap-[clamp(20px,1.5vw,28px)] md:grid-cols-2 lg:grid-cols-3">
-          {expertiseData.map((item, index) => {
+          {expertiseData.map((item) => {
             const Icon = iconMap[item.iconName] || Code;
-            const isLast = index === total - 1;
 
             return (
               <article
                 key={item.id}
-                className={`group relative flex flex-col justify-between rounded-[14px] border border-[var(--border)] bg-[var(--surface)] p-7 shadow-[0_4px_20px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--accent)] hover:shadow-[0_18px_40px_-16px_rgba(0,0,0,0.12)] sm:p-9 lg:p-[clamp(28px,2.4vw,46px)] ${
-                  centerLast && isLast
-                    ? "md:col-span-2 md:mx-auto md:w-[calc(50%-12px)] lg:col-span-1 lg:col-start-2 lg:mx-0 lg:w-auto"
-                    : ""
-                }`}
+                className="group relative flex flex-col justify-between rounded-[14px] border border-[var(--border)] bg-[var(--surface)] p-7 shadow-[0_4px_20px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[var(--accent)] hover:shadow-[0_18px_40px_-16px_rgba(0,0,0,0.12)] sm:p-9 lg:p-[clamp(28px,2.4vw,46px)]"
               >
                 <div>
                   {/* number + icon */}
                   <div className="flex items-center justify-between">
                     <span className="font-mono text-[13px] font-bold tracking-[0.14em] text-[var(--dark)] lg:text-[clamp(13px,0.85vw,16px)]">
-                      {String(index + 1).padStart(2, "0")} / {totalNumber}
+                      {item.id} / {totalNumber}
                     </span>
                     <Icon
                       strokeWidth={1.4}
@@ -81,25 +77,39 @@ export default function Expertise() {
                     />
                   </div>
 
-                  {/* title + description */}
-                  <h3 className="mt-12 text-[24px] font-bold leading-[1.25] tracking-[-0.02em] text-[var(--text)] lg:mt-[clamp(48px,4vw,76px)] lg:text-[clamp(24px,1.8vw,34px)]">
+                  {/* title */}
+                  <h3 className="mt-10 text-[24px] font-bold leading-[1.25] tracking-[-0.02em] text-[var(--text)] lg:mt-[clamp(40px,3.5vw,64px)] lg:text-[clamp(24px,1.8vw,34px)]">
                     {item.title}
                   </h3>
-                  <p className="mt-4 text-[16px] leading-[1.8] text-[var(--muted)] lg:mt-[clamp(14px,1vw,20px)] lg:text-[clamp(16px,1.1vw,21px)]">
+
+                  {/* tagline */}
+                  {item.tagline && (
+                    <p className="mt-3 text-[14px] font-semibold leading-[1.5] text-[var(--dark)] opacity-90 sm:text-[15px]">
+                      {item.tagline}
+                    </p>
+                  )}
+
+                  {/* description */}
+                  <p className="mt-4 text-[15px] leading-[1.8] text-[var(--muted)] lg:mt-[clamp(14px,1vw,20px)] lg:text-[clamp(15px,1vw,18px)]">
                     {item.description}
                   </p>
                 </div>
 
-                {/* tags */}
-                <div className="mt-8 flex flex-wrap gap-2.5 lg:mt-[clamp(32px,2.6vw,50px)]">
-                  {item.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="inline-block rounded-lg border border-[var(--border)] bg-[var(--surface-soft)] px-3 py-1.5 text-[12.5px] font-medium text-[var(--dark)] transition-colors group-hover:border-[var(--accent)] lg:px-[clamp(12px,0.9vw,17px)] lg:py-[clamp(6px,0.55vw,10px)] lg:text-[clamp(12px,0.8vw,15px)]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                {/* technology & expertise tags */}
+                <div className="mt-8 border-t border-[var(--border)] pt-6 lg:mt-[clamp(28px,2.4vw,44px)] lg:pt-6">
+                  <div className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--muted)]">
+                    Technology & Expertise
+                  </div>
+                  <div className="flex flex-wrap gap-2 lg:gap-2.5">
+                    {item.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="inline-block rounded-lg border border-[var(--border)] bg-[var(--surface-soft)] px-3 py-1.5 text-[12px] font-medium text-[var(--dark)] transition-colors group-hover:border-[var(--accent)] lg:px-[clamp(11px,0.8vw,15px)] lg:py-[clamp(5px,0.5vw,9px)] lg:text-[clamp(11.5px,0.75vw,14px)]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </article>
             );

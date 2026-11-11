@@ -78,13 +78,14 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-3">
           <ThemePicker />
 
-          <a
+          {/* Let's Talk CTA (Commented out) */}
+          {/* <a
             href="#contact"
             className="inline-flex items-center gap-2 bg-[var(--dark)] text-white hover:opacity-90 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
           >
             <span>Let's Talk</span>
             <ArrowUpRight size={15} />
-          </a>
+          </a> */}
         </div>
 
         {/* Mobile Header Controls */}
@@ -124,14 +125,15 @@ export default function Header() {
                 <span className="text-[var(--accent)] text-xs">→</span>
               </a>
             ))}
-            <a
+            {/* Let's Talk Mobile CTA (Commented out) */}
+            {/* <a
               href="#contact"
               onClick={closeMenu}
               className="mt-3 flex items-center justify-center gap-2 bg-[var(--dark)] text-white px-5 py-3 rounded-xl font-semibold text-sm shadow-md active:opacity-90"
             >
               <span>Let's Talk</span>
               <ArrowUpRight size={16} />
-            </a>
+            </a> */}
           </nav>
         </div>
       )}

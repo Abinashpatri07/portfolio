@@ -25,25 +25,20 @@ export default function About() {
               id="about-title"
               className="text-[40px] font-extrabold leading-[1.2] tracking-[-0.04em] text-[var(--text)] sm:text-[56px] lg:text-[clamp(56px,4.6vw,88px)]"
             >
-              Good software is more than{" "}
-              <span className="text-[var(--muted)]">just code.</span>
+              Building technology.{" "}
+              <span className="text-[var(--muted)]">Creating impact.</span>
             </h2>
 
             <p className="mt-9 max-w-[960px] text-[20px] font-medium leading-[1.75] text-[var(--text)] sm:text-[24px] lg:text-[clamp(22px,1.55vw,29px)]">
-              I enjoy turning complex requirements into clear, reliable systems
-              that connect people, processes, data, and technology.
+              With 12+ years of experience in technology and 50+ successfully delivered enterprise projects, I specialize in transforming complex business challenges into scalable, secure and high-performing digital solutions
             </p>
 
             <p className="mt-7 max-w-[940px] text-[17px] leading-[1.95] text-[var(--muted)] lg:text-[clamp(18px,1.2vw,22px)]">
-              My work spans full-stack applications, automation-driven business
-              platforms, backend services, real-time operations, communication
-              systems, and AI-enabled workflows. I approach each project with
-              attention to architecture, security, maintainability, and the
-              practical problems the software needs to solve.
+              My experience spans enterprise application development, solution architecture, backend engineering, API and system integrations, cloud infrastructure, process automation and AI-enabled solutions. I bring an end-to-end perspective to technology delivery — from understanding business requirements and defining architecture to engineering, integration and production deployment.
             </p>
 
             {/* Tick points */}
-            <ul className="mt-12 flex max-w-[720px] flex-wrap gap-x-12 gap-y-6">
+            <ul className="mt-12 flex max-w-[720px] flex-wrap gap-x-2 gap-y-4">
               {principles.map((p, i) => (
                 <li
                   key={i}
