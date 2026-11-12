@@ -48,7 +48,7 @@ export const expertiseData = [
       "Tailwind CSS",
       "Responsive Design",
       "State Management",
-      "Component Architecture"
+      "UI Component Architecture"
     ]
   },
   {
@@ -77,12 +77,14 @@ export const expertiseData = [
       "MySQL",
       "PostgreSQL",
       "MongoDB",
-      "SQL Server",
       "MariaDB",
+      "SQL Server",
+      "Oracle Database",
       "Database Design",
       "Data Modeling",
       "Query Optimization",
-      "Indexing & Transactions"
+      "Indexing & Transactions",
+      "Data Integrity & Management"
     ]
   },
   {
@@ -133,7 +135,8 @@ export const expertiseData = [
       "Linux Administration",
       "Git & GitHub",
       "Application Deployment",
-      "Infrastructure Monitoring"
+      "Infrastructure Monitoring",
+      "Infrastructure Security"
     ]
   },
   {
@@ -146,11 +149,11 @@ export const expertiseData = [
       "System Design",
       "Solution Architecture",
       "Enterprise Architecture",
-      "Microservices",
+      "Microservices Architecture",
       "Modular Monolith",
       "Architecture Patterns",
       "Scalability & Resilience",
-      "Technical Strategy"
+      "Technology Stack Strategy"
     ]
   },
   {
@@ -162,10 +165,11 @@ export const expertiseData = [
     tags: [
       "ERP",
       "CRM",
-      "Workflow Systems",
-      "Enterprise Apps",
-      "Process Automation",
-      "Operations Platforms",
+      "Workflow Management Systems",
+      "Enterprise Applications",
+      "Business Process Automation",
+      "Operations Management",
+      "Application Integration",
       "Industry Solutions"
     ]
   }

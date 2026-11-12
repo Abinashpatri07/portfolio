@@ -100,11 +100,11 @@ export default function Expertise() {
                   <div className="mb-3 text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--muted)]">
                     Technology & Expertise
                   </div>
-                  <div className="flex flex-wrap gap-2 lg:gap-2.5">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 lg:gap-2">
                     {item.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="inline-block rounded-lg border border-[var(--border)] bg-[var(--surface-soft)] px-3 py-1.5 text-[12px] font-medium text-[var(--dark)] transition-colors group-hover:border-[var(--accent)] lg:px-[clamp(11px,0.8vw,15px)] lg:py-[clamp(5px,0.5vw,9px)] lg:text-[clamp(11.5px,0.75vw,14px)]"
+                        className="inline-block rounded-lg border border-[var(--border)] bg-[var(--surface-soft)] px-2.5 py-1 text-[11px] font-medium text-[var(--dark)] transition-colors group-hover:border-[var(--accent)] sm:px-3 sm:py-1.5 sm:text-[11.5px] lg:px-[11px] lg:py-1.5 lg:text-[12px]"
                       >
                         {tag}
                       </span>
