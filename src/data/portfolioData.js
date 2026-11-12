@@ -48,7 +48,7 @@ export const expertiseData = [
       "Tailwind CSS",
       "Responsive Design",
       "State Management",
-      "UI Component Architecture"
+      "Component Architecture"
     ]
   },
   {
@@ -75,16 +75,14 @@ export const expertiseData = [
     description: "Designing efficient database architectures and data models that ensure data integrity, consistency and performance. Building reliable data layers with optimized queries, structured relationships and scalable data management strategies across relational and non-relational databases.",
     tags: [
       "MySQL",
-      "MariaDB",
-      "Microsoft SQL Server",
-      "Oracle Database",
       "PostgreSQL",
       "MongoDB",
+      "SQL Server",
+      "MariaDB",
       "Database Design",
       "Data Modeling",
       "Query Optimization",
-      "Indexing & Transactions",
-      "Data Integrity & Management"
+      "Indexing & Transactions"
     ]
   },
   {
@@ -128,15 +126,14 @@ export const expertiseData = [
     description: "Designing and managing cloud infrastructure and deployment environments that support application scalability, security and operational reliability. Implementing containerization, deployment automation, infrastructure monitoring and continuous delivery practices.",
     tags: [
       "AWS",
-      "Cloud Infrastructure",
       "VPS",
-      "Docker & Containerization",
+      "Docker",
       "CI/CD",
+      "Cloud Infrastructure",
       "Linux Administration",
       "Git & GitHub",
       "Application Deployment",
-      "Infrastructure Monitoring",
-      "Infrastructure Security"
+      "Infrastructure Monitoring"
     ]
   },
   {
@@ -146,14 +143,13 @@ export const expertiseData = [
     iconName: "Layers",
     description: "Translating complex business requirements into scalable, secure and maintainable technology architectures. Defining architectural patterns, technology strategies and system designs that align technical decisions with business objectives and long-term growth.",
     tags: [
-      "Enterprise Architecture",
-      "Solution Architecture",
       "System Design",
-      "Modular Monolith Architecture",
-      "Microservices Architecture",
+      "Solution Architecture",
+      "Enterprise Architecture",
+      "Microservices",
+      "Modular Monolith",
       "Architecture Patterns",
       "Scalability & Resilience",
-      "Technology Stack Selection",
       "Technical Strategy"
     ]
   },
@@ -166,12 +162,12 @@ export const expertiseData = [
     tags: [
       "ERP",
       "CRM",
-      "Workflow Management Systems",
-      "Business Process Automation",
+      "Workflow Systems",
       "Enterprise Applications",
-      "Operational Management Platforms",
-      "Business Application Integration",
-      "Industry-Specific Solutions"
+      "Business Process Automation",
+      "Operations Management",
+      "Application Integration",
+      "Industry Solutions"
     ]
   }
 ];
