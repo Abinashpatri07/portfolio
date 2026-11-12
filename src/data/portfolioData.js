@@ -111,7 +111,7 @@ export const expertiseData = [
     iconName: "Bot",
     description: "Integrating artificial intelligence and intelligent automation into business applications to streamline operations, improve decision-making and eliminate repetitive processes. Developing AI-enabled workflows and context-aware solutions that solve real-world business challenges.",
     tags: [
-      "AI & LLM Integration",
+      "LLM Integration",
       "Agentic AI",
       "RAG",
       "AI-Powered Applications",
@@ -209,57 +209,94 @@ export const projectsData = [
   },
   {
     id: "02",
-    title: "Corrugation Packaging ERP & Order Management",
-    category: "Industrial ERP",
-    platformLabel: "Industrial Packaging ERP",
-    visualVariant: "corrugation",
-    description: "A specialized manufacturing and order management ERP system engineered for the corrugated box and packaging industry. Handles multi-ply box specifications, open purchase orders, paper reel inventory, and real-time dispatch schedules.",
-    stack: ["React", "JavaScript", "Order Management", "Inventory Control", "ERP Systems", "Tailwind CSS"],
-    features: [
-      "Industrial purchase order workflow tracking and dispatch pipelines",
-      "Custom carton specification configurator (3-Ply, 5-Ply, RSC Mailers)",
-      "Raw paper reel stock and production material inventory telemetry",
-      "Automated pricing calculation, bursting strength, and GSM sizing",
-      "Centralized production scheduling with live operational status"
+    title: "Case Management Platform",
+    category: "Enterprise Web",
+    platformLabel: "Enterprise Case Operations",
+    visualVariant: "case-management",
+    description: "An enterprise case tracking and operations management system engineered with React, Tailwind CSS, Node.js, Express.js, and MySQL. Streamlines investigation pipelines, verification case lifecycles, SLA monitoring, automated CI/CD with GitHub Actions & Docker, hosted on AWS with real-time Prometheus & Grafana telemetry.",
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "GitHub",
+      "GitHub Actions",
+      "Docker",
+      "AWS",
+      "Grafana",
+      "Prometheus"
     ],
-    liveUrl: "https://corrugation-azure.vercel.app/",
-    displayUrl: "corrugation-azure.vercel.app"
+    features: [
+      "Centralized case intake, priority triage, and automated investigator assignment",
+      "Node.js & Express.js API layer with structured MySQL transactional case tracking",
+      "Automated continuous delivery with GitHub Actions and Docker containers",
+      "Reliable cloud deployment architecture hosted on Amazon Web Services (AWS)",
+      "System health, API throughput, and latency monitoring via Prometheus & Grafana",
+      "SLA compliance counters, milestone audit logs, and client case reporting"
+    ],
+    liveUrl: "https://bgv.dqnex.online/",
+    displayUrl: "bgv.dqnex.online"
   },
   {
     id: "03",
-    title: "Anjali Infra — Infrastructure & Engineering Solutions",
-    category: "Corporate Web",
-    platformLabel: "Infrastructure Web Portal",
-    visualVariant: "anjali-infra",
-    description: "A modern, high-performance web portal built for a prominent infrastructure development enterprise specializing in high-voltage electrical installations, substations, civil engineering, and industrial construction across Odisha & Andhra Pradesh.",
-    stack: ["React", "JavaScript", "Tailwind CSS", "Modern UI/UX", "Responsive Design", "Vercel"],
-    features: [
-      "Interactive showcase of heavy civil, industrial, and substation projects",
-      "Comprehensive service portfolio (33/11kV substations, transmission lines)",
-      "Client tender inquiries and streamlined corporate contact workflows",
-      "Fluid, mobile-optimized responsive layout with fast load performance",
-      "Professional corporate branding reflecting MSME and GST compliance"
-    ],
-    liveUrl: "https://anjali-infra.vercel.app/",
-    displayUrl: "anjali-infra.vercel.app"
-  },
-  {
-    id: "04",
-    title: "Plant Machine ERP & Production Telemetry",
+    title: "Enterprise Resource Platform",
     category: "Industrial ERP",
-    platformLabel: "Plant Machine Telemetry",
+    platformLabel: "Enterprise ERP & Telemetry",
     visualVariant: "erp-machine",
-    description: "An industrial IoT & machine monitoring ERP module deployed across 24 factory machines. Tracks real-time machine utilization, Overall Equipment Effectiveness (OEE at 82.6%), live breakdown alerts, active maintenance schedules, and sales order fulfillment across production lines.",
-    stack: ["React", "JavaScript", "Industrial IoT", "OEE Telemetry", "Machine Monitoring", "Tailwind CSS"],
+    description: "A full-scale industrial Enterprise Resource Planning (ERP) and machine telemetry platform built with React, Tailwind CSS, Python backend services, and PostgreSQL. Deployed on high-performance VPS with Docker, automated GitHub Actions CI/CD, and real-time operational monitoring via Prometheus & Grafana.",
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "Python",
+      "PostgreSQL",
+      "GitHub",
+      "GitHub Actions",
+      "Docker",
+      "VPS",
+      "Grafana",
+      "Prometheus"
+    ],
     features: [
-      "Real-time machine utilization tracking (87.3% utilization across 24 plant machines)",
-      "Live operational telemetry across Rotary Die Cutters, Slotters, and Corrugators",
-      "Overall Equipment Effectiveness (OEE) metrics and scheduled maintenance logs",
-      "Production order status tracking (Havells, Local Distributors, Custom Packaging)",
-      "Breakdown alerts, operator shift logs, and instant downtime notifications"
+      "Enterprise plant resource planning, machine utilization tracking, and OEE metrics",
+      "High-performance Python backend services with PostgreSQL relational architecture",
+      "Automated CI/CD pipelines via GitHub Actions and Docker containerization",
+      "Production deployment hosted on dedicated Virtual Private Server (VPS)",
+      "Real-time infrastructure and telemetry observability with Prometheus & Grafana",
+      "Live breakdown alerts, shift scheduling, and preventive maintenance automation"
     ],
     liveUrl: "https://erp-system-mauve-gamma.vercel.app/machine",
     displayUrl: "erp-system-mauve-gamma.vercel.app/machine"
+  },
+  {
+    id: "04",
+    title: "CORRNEX Platform",
+    category: "Industrial ERP",
+    platformLabel: "CORRNEX Industrial Packaging",
+    visualVariant: "corrugation",
+    description: "The CORRNEX packaging ERP and supply chain operations platform engineered with React, Tailwind CSS, Python backend services, and PostgreSQL. Handles industrial order processing, paper reel inventory, box specification calculation, automated GitHub Actions CI/CD, Docker deployment on VPS, and Prometheus & Grafana monitoring.",
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "Python",
+      "PostgreSQL",
+      "GitHub",
+      "GitHub Actions",
+      "Docker",
+      "VPS",
+      "Grafana",
+      "Prometheus"
+    ],
+    features: [
+      "End-to-end industrial packaging order workflows, purchase orders, and dispatch tracking",
+      "Python-powered computation engine for bursting strength, flute sizing, and pricing",
+      "PostgreSQL database architecture for high-volume paper reel inventory management",
+      "Automated build and deployment workflows via GitHub Actions and Docker on VPS",
+      "Continuous system and server monitoring with Prometheus & Grafana",
+      "Real-time plant line telemetry and dynamic order fulfillment pipelines"
+    ],
+    liveUrl: "https://corrugation-azure.vercel.app/",
+    displayUrl: "corrugation-azure.vercel.app"
   },
   {
     id: "05",
@@ -285,7 +322,6 @@ export const projectFilterCategories = [
   "All",
   "Enterprise Web",
   "Industrial ERP",
-  "Corporate Web",
   "Fintech & Marketing"
 ];
 

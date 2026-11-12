@@ -42,7 +42,7 @@ export default function ProjectMockup({ variant }) {
               <ShieldCheck size={15} />
             </div>
             <div>
-              <div className="text-[11px] font-bold text-[var(--text)]">Background Verification</div>
+              <div className="text-[11px] font-bold text-[var(--text)]">Background Verification Platform</div>
               <div className="text-[9px] text-[var(--muted)]">Candidate Screening Platform</div>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function ProjectMockup({ variant }) {
 
           {/* Infrastructure & Audit footer */}
           <div className="flex items-center justify-between pt-1 text-[8px] font-medium text-[var(--muted)] border-t border-[var(--border)]">
-            <span>AWS · MySQL · Docker</span>
+            <span>AWS · Node.js · MySQL</span>
             <span className="text-[var(--accent)] font-semibold flex items-center gap-1">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
               Grafana & Prometheus
@@ -109,8 +109,77 @@ export default function ProjectMockup({ variant }) {
     );
   }
 
-  // 2. Corrugation Packaging ERP Mockup
-  if (variant === 'corrugation') {
+  // 2. Case Management Platform Mockup
+  if (variant === 'case-management') {
+    return (
+      <div className="w-full max-w-[340px] overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-[0_14px_35px_rgba(0,0,0,0.08)]">
+        {/* Header */}
+        <div className="flex items-center justify-between border-b border-[var(--border)] bg-[var(--surface-soft)]/50 px-3.5 py-2.5">
+          <div className="flex items-center gap-2">
+            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[var(--accent)] text-white shadow-sm">
+              <FileCheck2 size={15} />
+            </div>
+            <div>
+              <div className="text-[11px] font-bold text-[var(--text)]">Case Management Platform</div>
+              <div className="text-[9px] text-[var(--muted)]">Verification Operations & SLA</div>
+            </div>
+          </div>
+          <span className="flex items-center gap-1 rounded bg-[var(--surface)] px-1.5 py-0.5 text-[8px] font-bold tracking-wider text-[var(--accent)] border border-[var(--border)]">
+            <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)] pulse-dot"></span>
+            ACTIVE
+          </span>
+        </div>
+
+        {/* Content */}
+        <div className="p-3 space-y-2.5">
+          {/* Quick Metrics */}
+          <div className="grid grid-cols-3 gap-1.5">
+            {[
+              { label: 'Active Cases', value: '142', icon: Activity },
+              { label: 'In Review', value: '28', icon: Clock },
+              { label: 'Cleared SLA', value: '98.4%', icon: CheckCircle2 },
+            ].map((m, idx) => {
+              const Icon = m.icon;
+              return (
+                <div key={idx} className="rounded-lg border border-[var(--border)] bg-[var(--surface-soft)]/30 p-1.5 text-center">
+                  <Icon size={12} className="text-[var(--accent)] mx-auto mb-0.5" />
+                  <span className="text-[8px] text-[var(--muted)] block">{m.label}</span>
+                  <span className="text-[9px] font-bold text-[var(--text)] block">{m.value}</span>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Active Case Card */}
+          <div className="rounded-xl border border-[var(--border)] bg-gradient-to-br from-[var(--surface-soft)]/60 to-[var(--surface)] p-2.5">
+            <div className="flex items-center justify-between text-[8px] font-bold uppercase tracking-wider text-[var(--muted)] mb-1">
+              <span>Case #CM-2026-8942</span>
+              <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.2 rounded font-bold text-[7.5px]">On Track</span>
+            </div>
+            <div className="text-[11px] font-bold text-[var(--dark)]">
+              Candidate Screening & Case Investigation
+            </div>
+            <div className="mt-1.5 flex items-center justify-between text-[8px] text-[var(--muted)] border-t border-[var(--border)]/60 pt-1.5">
+              <span>Verification Specialist</span>
+              <span className="font-semibold text-[var(--accent)]">SLA: 24h Remaining</span>
+            </div>
+          </div>
+
+          {/* Infrastructure Footer */}
+          <div className="flex items-center justify-between pt-1 text-[8px] font-medium text-[var(--muted)] border-t border-[var(--border)]">
+            <span>AWS · Node.js · MySQL</span>
+            <span className="text-[var(--accent)] font-semibold flex items-center gap-1">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              Grafana & Prometheus
+            </span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // 3. Corrugation Packaging / CORRNEX Platform Mockup
+  if (variant === 'corrugation' || variant === 'corrnex') {
     return (
       <div className="w-full max-w-[340px] overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-[0_14px_35px_rgba(0,0,0,0.08)]">
         {/* Header */}
@@ -120,8 +189,8 @@ export default function ProjectMockup({ variant }) {
               <Boxes size={15} />
             </div>
             <div>
-              <div className="text-[11px] font-bold text-[var(--text)]">Corrugation Packaging ERP</div>
-              <div className="text-[9px] text-[var(--muted)]">Order & Manufacturing Control</div>
+              <div className="text-[11px] font-bold text-[var(--text)]">CORRNEX Platform</div>
+              <div className="text-[9px] text-[var(--muted)]">Packaging ERP & Supply Chain</div>
             </div>
           </div>
           <span className="rounded bg-[var(--surface)] px-1.5 py-0.5 text-[8px] font-bold tracking-wider text-[var(--accent)] border border-[var(--border)]">
@@ -168,7 +237,7 @@ export default function ProjectMockup({ variant }) {
           <div className="flex items-center justify-between rounded-md border border-[var(--border)] bg-[var(--surface)] px-2.5 py-1.5 text-[8px]">
             <div className="flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)] pulse-dot" />
-              <span className="font-semibold text-[var(--text)]">Corrugator Plant Line 1</span>
+              <span className="font-semibold text-[var(--text)]">CORRNEX Plant Line 1</span>
             </div>
             <span className="text-[var(--accent)] font-semibold">Running 120 m/min</span>
           </div>
@@ -176,8 +245,11 @@ export default function ProjectMockup({ variant }) {
 
         {/* Footer */}
         <div className="flex items-center justify-between border-t border-[var(--border)] bg-[var(--surface-soft)]/30 px-3 py-1.5 text-[8px] text-[var(--muted)]">
-          <span>Paper Reel Inventory Auto-Deduct</span>
-          <span className="text-[var(--accent)] font-semibold">Live Telemetry</span>
+          <span>VPS · Python · PostgreSQL · Docker</span>
+          <span className="text-[var(--accent)] font-semibold flex items-center gap-1">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            Grafana & Prometheus
+          </span>
         </div>
       </div>
     );
@@ -271,8 +343,8 @@ export default function ProjectMockup({ variant }) {
               <Gauge size={15} />
             </div>
             <div>
-              <div className="text-[11px] font-bold text-[var(--text)]">Plant Machine ERP</div>
-              <div className="text-[9px] text-[var(--muted)]">Across 24 Factory Machines</div>
+              <div className="text-[11px] font-bold text-[var(--text)]">Enterprise Resource Platform</div>
+              <div className="text-[9px] text-[var(--muted)]">Plant Machine ERP & OEE Control</div>
             </div>
           </div>
           <span className="flex items-center gap-1 rounded bg-[var(--surface)] px-1.5 py-0.5 text-[8px] font-bold tracking-wider text-[var(--accent)] border border-[var(--border)]">
@@ -339,8 +411,11 @@ export default function ProjectMockup({ variant }) {
 
         {/* Footer */}
         <div className="flex items-center justify-between border-t border-[var(--border)] bg-[var(--surface-soft)]/30 px-3 py-1.5 text-[8px] text-[var(--muted)]">
-          <span>Corrugation & Slotter Lines</span>
-          <span className="text-[var(--accent)] font-semibold">IoT Telemetry Live</span>
+          <span>VPS · Python · PostgreSQL · Docker</span>
+          <span className="text-[var(--accent)] font-semibold flex items-center gap-1">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            Grafana & Prometheus
+          </span>
         </div>
       </div>
     );
