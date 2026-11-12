@@ -315,6 +315,24 @@ export const projectsData = [
     ],
     liveUrl: "https://referalcouponcodefrontend.vercel.app/",
     displayUrl: "referalcouponcodefrontend.vercel.app"
+  },
+  {
+    id: "06",
+    title: "Anjali Infra — Infrastructure & Engineering Solutions",
+    category: "Corporate Web",
+    platformLabel: "Infrastructure Web Portal",
+    visualVariant: "anjali-infra",
+    description: "A modern, high-performance web portal built for a prominent infrastructure development enterprise specializing in high-voltage electrical installations, substations, civil engineering, and industrial construction across Odisha & Andhra Pradesh.",
+    stack: ["React", "JavaScript", "Tailwind CSS", "Modern UI/UX", "Responsive Design", "Vercel"],
+    features: [
+      "Interactive showcase of heavy civil, industrial, and substation projects",
+      "Comprehensive service portfolio (33/11kV substations, transmission lines)",
+      "Client tender inquiries and streamlined corporate contact workflows",
+      "Fluid, mobile-optimized responsive layout with fast load performance",
+      "Professional corporate branding reflecting MSME and GST compliance"
+    ],
+    liveUrl: "https://anjali-infra.vercel.app/",
+    displayUrl: "anjali-infra.vercel.app"
   }
 ];
 
@@ -322,6 +340,7 @@ export const projectFilterCategories = [
   "All",
   "Enterprise Web",
   "Industrial ERP",
+  "Corporate Web",
   "Fintech & Marketing"
 ];
 

@@ -7,11 +7,12 @@ export default function Projects() {
   const total = projectsData.length;
   const totalNumber = String(total).padStart(2, "0");
 
-  /* 2 columns, masonry style matching reference site:
-     pehle 3 projects left me (Background Verification, Corrugation, Anjali Infra), 
-     baaki 2 right me (Plant Machine ERP, Referral & Coupon Platform) */
-  const half = Math.ceil(total / 2);
-  const columns = [projectsData.slice(0, half), projectsData.slice(half)];
+  /* 2 columns, masonry style:
+     Left Column: Background Verification (01), Case Management Platform (02), Referral & Coupon (05)
+     Right Column: CORRNEX Platform (04), Enterprise Resource Platform (03 - right side of Case Management), Anjali Infra (06) */
+  const leftColumn = [projectsData[0], projectsData[1], projectsData[4]].filter(Boolean);
+  const rightColumn = [projectsData[3], projectsData[2], projectsData[5]].filter(Boolean);
+  const columns = [leftColumn, rightColumn];
 
   return (
     <section
