@@ -183,14 +183,27 @@ export const projectsData = [
     category: "Enterprise Web",
     platformLabel: "Enterprise BGV Platform",
     visualVariant: "hedge-verify",
-    description: "A secure, end-to-end background verification (BGV) management platform built for automated candidate screening, identity verification, document compliance workflows, and real-time status tracking for enterprise human resource teams.",
-    stack: ["React", "Node.js", "REST APIs", "Document Verification", "RBAC", "Tailwind CSS"],
+    description: "A secure, end-to-end background verification (BGV) management platform built with React, Tailwind CSS, Node.js, Express.js, and MySQL. Features automated candidate screening, document compliance workflows, automated CI/CD with GitHub Actions & Docker, AWS cloud hosting, and real-time observability with Prometheus & Grafana.",
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "GitHub",
+      "GitHub Actions",
+      "Docker",
+      "AWS",
+      "Grafana",
+      "Prometheus"
+    ],
     features: [
-      "End-to-end BGV candidate onboarding and verification workflows",
-      "Automated document validation, identity checks, and fraud screening",
-      "Enterprise multi-role permissions (Admin, HR, Verification Specialists)",
-      "Real-time verification progress tracking and status dashboards",
-      "Audit-ready verification reports with high-grade data protection"
+      "End-to-end candidate onboarding and automated identity validation workflows",
+      "Node.js & Express.js backend services with MySQL relational data architecture",
+      "Automated CI/CD pipeline using GitHub Actions and Docker containerization",
+      "High-availability cloud deployment on Amazon Web Services (AWS)",
+      "Real-time monitoring and observability dashboards with Prometheus & Grafana",
+      "Enterprise multi-role permissions (Admin, HR, Verification Specialists) and audit reporting"
     ],
     liveUrl: "https://bgv.dqnex.online/",
     displayUrl: "bgv.dqnex.online"

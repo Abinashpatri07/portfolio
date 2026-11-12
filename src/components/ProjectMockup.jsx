@@ -96,10 +96,13 @@ export default function ProjectMockup({ variant }) {
             </div>
           </div>
 
-          {/* Security & Audit footer */}
+          {/* Infrastructure & Audit footer */}
           <div className="flex items-center justify-between pt-1 text-[8px] font-medium text-[var(--muted)] border-t border-[var(--border)]">
-            <span>Enterprise Multi-Tenant RBAC</span>
-            <span className="text-[var(--accent)] font-semibold">Audit Ready</span>
+            <span>AWS · MySQL · Docker</span>
+            <span className="text-[var(--accent)] font-semibold flex items-center gap-1">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              Grafana & Prometheus
+            </span>
           </div>
         </div>
       </div>
