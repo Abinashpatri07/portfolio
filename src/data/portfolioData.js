@@ -96,6 +96,7 @@ export const expertiseData = [
     tags: [
       "REST API",
       "SOAP API",
+      "Webhooks",
       "RabbitMQ",
       "Database Connectors",
       "SMTP Integration",
@@ -112,10 +113,9 @@ export const expertiseData = [
     tags: [
       "AI & LLM Integration",
       "Agentic AI",
-      "Retrieval-Augmented Generation (RAG)",
+      "RAG",
       "AI-Powered Applications",
       "Workflow Automation",
-      "Intelligent Process Automation",
       "Prompt Engineering",
       "AI API Integration"
     ]
