@@ -163,10 +163,9 @@ export const expertiseData = [
       "ERP",
       "CRM",
       "Workflow Systems",
-      "Enterprise Applications",
-      "Business Process Automation",
-      "Operations Management",
-      "Application Integration",
+      "Enterprise Apps",
+      "Process Automation",
+      "Operations Platforms",
       "Industry Solutions"
     ]
   }
