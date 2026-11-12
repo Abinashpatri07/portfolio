@@ -1,15 +1,15 @@
 export const personalInfo = {
-  name: "Abinash Patri",
-  brand: "abinash",
+  name: "Nrusingha Pradhan",
+  brand: "nrusingha",
   role: "Full Stack Developer & Software Engineer",
   shortRole: "Full Stack Developer",
-  email: "abinashpatri.dev@gmail.com",
-  phone: "+91 98765 43210",
+  // email: "nrusingha.pradhan.dev@gmail.com",
+  // phone: "+91 98765 43210",
   location: "India",
   availableForWork: true,
-  github: "https://github.com/Abinashpatri",
-  linkedin: "https://linkedin.com/in/abinashpatri",
-  twitter: "https://twitter.com/Abinashpatri",
+  // github: "https://github.com/nrusingha",
+  // linkedin: "https://linkedin.com/in/nrusingha",
+  // twitter: "https://twitter.com/nrusingha",
 };
 
 export const navLinks = [
@@ -41,6 +41,7 @@ export const expertiseData = [
     description: "Building responsive, accessible and high-performance user interfaces that simplify complex workflows. Creating scalable frontend architectures with reusable components, efficient state management and seamless backend integration.",
     tags: [
       "React.js",
+      "Next.js",
       "Angular",
       "JavaScript",
       "TypeScript",
@@ -48,7 +49,7 @@ export const expertiseData = [
       "Tailwind CSS",
       "Responsive Design",
       "State Management",
-      "UI Component Architecture"
+      
     ]
   },
   {
@@ -61,10 +62,11 @@ export const expertiseData = [
       "Node.js",
       "Express.js",
       "Python",
+      "FastAPI",
       ".NET",
+      "Redis",
       "Authentication & Authorization",
-      "Business Logic Engineering",
-      "Background Processing"
+      "Batch Processing"
     ]
   },
   {
@@ -78,13 +80,13 @@ export const expertiseData = [
       "PostgreSQL",
       "MongoDB",
       "MariaDB",
-      "SQL Server",
-      "Oracle Database",
+      "MS SQL",
+      "Oracle",
       "Database Design",
       "Data Modeling",
       "Query Optimization",
       "Indexing & Transactions",
-      "Data Integrity & Management"
+      
     ]
   },
   {
@@ -99,7 +101,7 @@ export const expertiseData = [
       "Webhooks",
       "RabbitMQ",
       "Database Connectors",
-      "SMTP Integration",
+      "SFTP Integration",
       "ESB Integration",
       "System Integration"
     ]
@@ -131,12 +133,12 @@ export const expertiseData = [
       "VPS",
       "Docker",
       "CI/CD",
-      "Cloud Infrastructure",
-      "Linux Administration",
-      "Git & GitHub",
+      "Cloud",
+      "GitHub",
+      "GitHub Actions",
+      "Grafana", 
+      "Prometheus",
       "Application Deployment",
-      "Infrastructure Monitoring",
-      "Infrastructure Security"
     ]
   },
   {
@@ -148,10 +150,9 @@ export const expertiseData = [
     tags: [
       "System Design",
       "Solution Architecture",
-      "Enterprise Architecture",
-      "Microservices Architecture",
+      "Enterprise",
+      "Microservices",
       "Modular Monolith",
-      "Architecture Patterns",
       "Scalability & Resilience",
       "Technology Stack Strategy"
     ]
@@ -163,14 +164,14 @@ export const expertiseData = [
     iconName: "Building2",
     description: "Designing and developing enterprise-grade business platforms that streamline operations, automate workflows and improve organizational efficiency. Delivering integrated applications tailored to complex business processes, industry requirements and evolving operational needs.",
     tags: [
+      "Multi Tenant",
       "ERP",
       "CRM",
-      "Workflow Management Systems",
+      "WMS",
       "Enterprise Applications",
-      "Business Process Automation",
-      "Operations Management",
+      "Process Automation",
       "Application Integration",
-      "Industry Solutions"
+      "Specialized Systems"
     ]
   }
 ];
@@ -270,7 +271,7 @@ export const projectsData = [
   },
   {
     id: "04",
-    title: "CORRNEX Platform",
+    title: "Packaging ManagementPlatform",
     category: "Industrial ERP",
     platformLabel: "CORRNEX Industrial Packaging",
     visualVariant: "corrugation",
@@ -298,42 +299,42 @@ export const projectsData = [
     liveUrl: "https://corrugation-azure.vercel.app/",
     displayUrl: "corrugation-azure.vercel.app"
   },
-  {
-    id: "05",
-    title: "Referral & Coupon Code Growth Platform",
-    category: "Fintech & Marketing",
-    platformLabel: "Growth & Coupon Engine",
-    visualVariant: "referral-coupon",
-    description: "A high-conversion customer acquisition and discount management platform engineered for referral programs and coupon campaigns. Features dynamic code generation, tiered promotional discounts (Basic, Standard, Premium), redemption analytics, and referral attribution tracking.",
-    stack: ["React", "Vite", "Recharts", "Marketing Analytics", "REST APIs", "Tailwind CSS"],
-    features: [
-      "Dynamic referral link generation and unique voucher coupon code issuance",
-      "Yearly & monthly comparative analytics (Referral vs Coupon code redemptions)",
-      "Multi-tiered discount structures (Basic 10%, Standard 20%, Premium 30%, Gift Vouchers)",
-      "Real-time referral performance dashboards, conversion funnel telemetry, and anti-fraud checks",
-      "Fluid responsive user interface with instant one-click code copy and sharing"
-    ],
-    liveUrl: "https://referalcouponcodefrontend.vercel.app/",
-    displayUrl: "referalcouponcodefrontend.vercel.app"
-  },
-  {
-    id: "06",
-    title: "Anjali Infra — Infrastructure & Engineering Solutions",
-    category: "Corporate Web",
-    platformLabel: "Infrastructure Web Portal",
-    visualVariant: "anjali-infra",
-    description: "A modern, high-performance web portal built for a prominent infrastructure development enterprise specializing in high-voltage electrical installations, substations, civil engineering, and industrial construction across Odisha & Andhra Pradesh.",
-    stack: ["React", "JavaScript", "Tailwind CSS", "Modern UI/UX", "Responsive Design", "Vercel"],
-    features: [
-      "Interactive showcase of heavy civil, industrial, and substation projects",
-      "Comprehensive service portfolio (33/11kV substations, transmission lines)",
-      "Client tender inquiries and streamlined corporate contact workflows",
-      "Fluid, mobile-optimized responsive layout with fast load performance",
-      "Professional corporate branding reflecting MSME and GST compliance"
-    ],
-    liveUrl: "https://anjali-infra.vercel.app/",
-    displayUrl: "anjali-infra.vercel.app"
-  }
+  // {
+  //   id: "05",
+  //   title: "Referral & Coupon Code Growth Platform",
+  //   category: "Fintech & Marketing",
+  //   platformLabel: "Growth & Coupon Engine",
+  //   visualVariant: "referral-coupon",
+  //   description: "A high-conversion customer acquisition and discount management platform engineered for referral programs and coupon campaigns. Features dynamic code generation, tiered promotional discounts (Basic, Standard, Premium), redemption analytics, and referral attribution tracking.",
+  //   stack: ["React", "Vite", "Recharts", "Marketing Analytics", "REST APIs", "Tailwind CSS"],
+  //   features: [
+  //     "Dynamic referral link generation and unique voucher coupon code issuance",
+  //     "Yearly & monthly comparative analytics (Referral vs Coupon code redemptions)",
+  //     "Multi-tiered discount structures (Basic 10%, Standard 20%, Premium 30%, Gift Vouchers)",
+  //     "Real-time referral performance dashboards, conversion funnel telemetry, and anti-fraud checks",
+  //     "Fluid responsive user interface with instant one-click code copy and sharing"
+  //   ],
+  //   liveUrl: "https://referalcouponcodefrontend.vercel.app/",
+  //   displayUrl: "referalcouponcodefrontend.vercel.app"
+  // },
+  // {
+  //   id: "06",
+  //   title: "Anjali Infra — Infrastructure & Engineering Solutions",
+  //   category: "Corporate Web",
+  //   platformLabel: "Infrastructure Web Portal",
+  //   visualVariant: "anjali-infra",
+  //   description: "A modern, high-performance web portal built for a prominent infrastructure development enterprise specializing in high-voltage electrical installations, substations, civil engineering, and industrial construction across Odisha & Andhra Pradesh.",
+  //   stack: ["React", "JavaScript", "Tailwind CSS", "Modern UI/UX", "Responsive Design", "Vercel"],
+  //   features: [
+  //     "Interactive showcase of heavy civil, industrial, and substation projects",
+  //     "Comprehensive service portfolio (33/11kV substations, transmission lines)",
+  //     "Client tender inquiries and streamlined corporate contact workflows",
+  //     "Fluid, mobile-optimized responsive layout with fast load performance",
+  //     "Professional corporate branding reflecting MSME and GST compliance"
+  //   ],
+  //   liveUrl: "https://anjali-infra.vercel.app/",
+  //   displayUrl: "anjali-infra.vercel.app"
+  // }
 ];
 
 export const projectFilterCategories = [
@@ -374,19 +375,19 @@ export const servicesData = [
 export const approachSteps = [
   {
     title: "Understand",
-    description: "Understand the problem, users, business workflows, technical constraints, and long-term goals before defining the solution."
+    description: "Explore business objectives, user expectations, operational workflows and technical constraints. Translate complex requirements into clearly defined functional specifications and actionable solution objectives."
   },
   {
     title: "Architect",
-    description: "Design the application's structure, data models, service boundaries, integrations, and security considerations with maintainability in mind."
+    description: "Define the solution architecture, technology stack, database models, system components and integration strategy. Establish a strong technical foundation focused on scalability, security, performance and maintainability"
   },
   {
     title: "Build",
-    description: "Develop connected frontend, backend, and supporting components using technologies suited to the requirements and operating environment."
+    description: "Engineer connected frontend, backend and data components, integrate external systems and implement business workflows. Transform technical designs into robust, production-ready applications aligned with business requirements."
   },
   {
     title: "Refine",
-    description: "Test, review, optimize, and improve reliability, performance, usability, and operational behavior through iteration."
+    description: "Validate functionality, optimize performance, strengthen security and improve user experience. Continuously refine the solution through testing, monitoring and feedback to ensure reliability and long-term business value."
   }
 ];
 

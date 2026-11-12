@@ -34,13 +34,13 @@ export default function Services() {
             </p>
 
             <div className="mt-8">
-              <a
+              {/* <a
                 href="#contact"
                 className="inline-flex items-center gap-2.5 bg-[var(--bg)] text-[var(--dark)] hover:opacity-90 px-6 py-3.5 rounded-full font-semibold text-[15px] shadow-md transition-all duration-200 hover:-translate-y-0.5"
               >
                 <span>Discuss your project</span>
                 <ArrowUpRight size={17} />
-              </a>
+              </a> */}
             </div>
           </div>
 
